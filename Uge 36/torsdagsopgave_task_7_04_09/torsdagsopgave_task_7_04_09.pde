@@ -4,12 +4,15 @@
 int input = 20;
 
 for (int i = 0; i <= input; i++){
-  println(i);
+  
   if (i == 6){
-    println("six"); // Hvis tallet er lig med 6, skal der printes "six"
-  } 
-  if (i == input / 2){
-    println("HALF"); // Når tallet svarer til det halve af input, print "HALF"
+    print("six" + " "); // Hvis tallet er lig med 6, skal der printes "six"
+  }
+  else if(i == input / 2){
+    print("HALF" + " "); // Når tallet svarer til det halve af input, print "HALF"
+  }
+  else {
+    print(i + " ");
   }
 }
 
