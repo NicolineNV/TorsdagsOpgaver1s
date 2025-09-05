@@ -2,7 +2,7 @@
 
 String Navn = "Nicoline"; // 2.a
 int Alder = 24; // 2.b
-boolean Glad = false; // 2.c
+boolean Glad = true; // 2.c
 
 println (Navn);
 println (Alder);
