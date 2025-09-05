@@ -23,13 +23,17 @@ if ((min <= 5 || max <= 5) && min + max > 10){
 }
 
 // 3.c
-int x = 5;
-int y = 10;
-int z = 15;
+int x = 0;
+int y = 27;
+int z = 3;
 
-if (x + y + z == 30 && ((x % 10 != 0) && (y % 10 != 0) && (z % 10 != 0))){
-  println("Success!"); // Hvis summen af x, y og z er 30, og hverken x, y eller z er lig med 10, 20 og 30, print succes
+if (x + y + z == 30 && ((x % 10 != 0 || x == 0) && (y % 10 != 0 || y == 0) && (z % 10 != 0 || z == 0))){
+  println("Success!"); 
+  
+  // Hvis summen af x, y og z er 30, og hverken x, y eller z er lig med 10, 20 og 30, print succes
   
 } else if (x + y + z != 30 || ((x % 10 == 0) || (y % 10 == 0) || (z % 10 == 0))){
-  println ("Failure!"); // Hvis enten summen af x, y, og z ikke er 30, eller enten x, y eller z er lig med 10, 20, 30, print failure
+  println ("Failure!"); 
+  
+  // Hvis enten summen af x, y, og z ikke er 30, eller enten x, y eller z er lig med 10, 20, 30, print failure
 }
