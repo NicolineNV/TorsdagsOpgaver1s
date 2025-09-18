@@ -29,11 +29,13 @@ void draw () {
   // 4.f - testing if it prints the circle again with display()
   testCircle.display();
   
+  // 4.l - added a for loop instead of a for each loop, because i could not get it to work with a for each loop
   for (int i = 0; i < circlesArray.length; i++){
     circlesArray[i].move(5);
     circlesArray[i].display();
   }
   
+  // The for each loop - can not understand why it does not work
   /*for (Circle o : circlesArray){
     circlesArray[o].move(5);
     circlesArray[o].display();
