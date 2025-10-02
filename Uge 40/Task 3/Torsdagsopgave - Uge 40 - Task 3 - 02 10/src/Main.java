@@ -71,7 +71,7 @@ public class Main {
     // First attempt - made the code shorter under
     /* public static boolean isNormal (Building building) {
         if (building.getNumberOfFloors() <= countRoomsInBuilding(building)){
-             true
+             return true;
         }
     } */
 
